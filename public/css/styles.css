@@ -251,7 +251,7 @@ img {
   position: fixed;
   background-color: var(--white);
   top: 0;
-  left: 0;
+  left: 100%;
   width: 100vw;
   height: 100vh;
   z-index: 100;
@@ -265,6 +265,7 @@ img {
 
 .menu--open .menu__backdrop {
   visibility: visible;
+  left: 0;
   opacity: 1;
 }
 
@@ -283,7 +284,7 @@ img {
 
 .menu__links {
   list-style: none;
-  margin: 0;
+  margin-top: 100px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -891,6 +892,21 @@ img {
   .btn__menu {
     display: block;
   }
+
+  .hero-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    order: 5;
+}
 
   h1 {
     font-size: 40px;
