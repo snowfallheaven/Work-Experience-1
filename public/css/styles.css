@@ -282,7 +282,7 @@ img {
   cursor: pointer;
 }
 
-.menu__links {
+.menu__links { 
   list-style: none;
   margin-top: 100px;
   padding: 0;
@@ -894,19 +894,24 @@ img {
   }
 
   .hero-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 56px;
-}
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .hero-text {
+    display: contents;
+  }
+
+  .hero-media {
+    width: 100%;
+    margin-top: 32px;
+  }
 
   .hero-actions {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    order: 5;
-}
+    order: 1;
+    justify-content: center;
+  }
 
   h1 {
     font-size: 40px;
@@ -916,8 +921,19 @@ img {
     font-size: 30px;
   }
 
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playbook-grid {
+    grid-template-columns: 1fr;
+  }
+
   .section {
     padding: 64px 0;
+    
   }
 
   .feature-row {
