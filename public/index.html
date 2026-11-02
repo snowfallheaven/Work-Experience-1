@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/f191e4acef.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </head>
 <body>
   <header class="site-header site-header--home">
@@ -24,6 +26,24 @@
           <li><a href="https://app.calicomedia.co/login">Log in</a></li>
           <li><a class="btn" href="contact.html">Book a demo</a></li>
         </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="btn__menu menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fa-solid fa-x"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list"><a href="features.html" class="menu__link" onclick="closeMenu()">Features</a></li>
+            <li class="menu__list"><a href="pricing.html" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+            <li class="menu__list"><a href="#playbook" class="menu__link" onclick="closeMenu()">Growth playbook</a></li>
+            <li class="menu__list"><a href="about.html" class="menu__link" onclick="closeMenu()">About</a></li>
+            <li class="menu__list"><a href="contact.html" class="menu__link" onclick="closeMenu()">Contact</a></li>
+            <li class="menu__list"><a href="https://app.calicomedia.co/login" class="menu__link" onclick="closeMenu()">Log in</a></li>
+            <li class="menu__list"><a href="contact.html" class="menu__link">Book a demo</a></li>
+          </ul>
+        </div>
+        </div>
       </nav>
     </div>
   </header>
