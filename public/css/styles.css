@@ -943,8 +943,15 @@ img {
 
 @media (max-width: 768px) {
 
-  .site-header--home, .nav-links {
+  .site-header--home .nav-links {
     display: none;
+  }
+
+  .site-header .nav-links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
   
   .container {
@@ -1026,6 +1033,18 @@ img {
 }
 
 @media (max-width: 480px) {
+
+  .site-header .nav-links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .site-header .logo {
+    margin: 0 auto;
+  }
+
   h1 {
     font-size: 34px;
   }
