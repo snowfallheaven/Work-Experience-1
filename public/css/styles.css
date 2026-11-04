@@ -915,8 +915,14 @@ img {
     flex-direction: column;
   }
 
+  .eyebrow {
+    padding: 0;
+  }
+
   .item5 {
     order: 2;
+    padding-bottom: 32px;
+    padding-top: 0;
   }
 
   .item4 {
@@ -924,9 +930,14 @@ img {
   }
 
   .hero-inner {
-    /* flex-wrap: wrap; */
-    flex-direction: column-reverse;
     padding: 0 14px;
+  }
+
+  .hero-text > div:nth-child(3) {
+    order: 3;
+  }
+  .hero-text > div:nth-child(2) {
+    order: 3;
   }
 }
 
@@ -934,6 +945,10 @@ img {
 
   .nav-links {
     display: none;
+  }
+  
+  .container {
+    flex-wrap: nowrap;
   }
 
   .btn__menu {
@@ -1003,6 +1018,10 @@ img {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  header .container {
+    flex-direction: row;
   }
 }
 
