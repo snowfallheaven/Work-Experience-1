@@ -1030,7 +1030,20 @@ img {
   header .container {
     flex-direction: row;
   }
+
+  .site-header:not(.site-header--home) .container {
+    flex-direction: column;
+  }
+
+  .site-header:not(.site-header--home) nav {
+    width: 100%;
+  }
+
+  .site-header:not(.site-header--home) .btn__menu {
+    display: none;
+  }
 }
+
 
 @media (max-width: 480px) {
 
