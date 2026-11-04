@@ -943,7 +943,7 @@ img {
 
 @media (max-width: 768px) {
 
-  .nav-links {
+  .site-header--home, .nav-links {
     display: none;
   }
   
