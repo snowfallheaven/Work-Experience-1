@@ -901,6 +901,35 @@ img {
   padding-top: 24px;
 }
 
+@media (max-width: 1100px) {
+  .hero-media {
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item5 {
+    order: 2;
+  }
+
+  .item4 {
+    order: 5;
+  }
+
+  .hero-inner {
+    /* flex-wrap: wrap; */
+    flex-direction: column-reverse;
+    padding: 0 14px;
+  }
+}
+
 @media (max-width: 768px) {
 
   .nav-links {
@@ -927,7 +956,6 @@ img {
   }
 
   .hero-actions {
-    order: 1;
     justify-content: center;
   }
 
