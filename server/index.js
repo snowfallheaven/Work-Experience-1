@@ -22,6 +22,17 @@ app.post('/contact', (req, res) => {
   res.json({ ok: true });
 });
 
+
 app.listen(PORT, () => {
   console.log(`Calico Media site running at http://localhost:${PORT}`);
 });
+
+// app.post('/submit', (req, res) => {
+//     const { name, email, message, honeypot } = req.body;
+
+//     if (honeypot) {
+//         return res.send("Thanks, we'll be in touch.");
+//     }
+    
+//     res.send("Thanks, we'll be in touch.");
+// });
